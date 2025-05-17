@@ -38,19 +38,51 @@ const Index = () => {
             <Hero onExplore={() => scrollToSection('about')} />
           </section>
           
-          <section id="about" className="py-20 bg-background/95">
+          <section id="about" className="py-20 bg-background/95 relative">
+            <div className="absolute inset-0 z-0 opacity-5">
+              <img 
+                src="https://images.unsplash.com/photo-1518655048521-f130df041f66?auto=format&fit=crop&q=80" 
+                alt="" 
+                className="w-full h-full object-cover"
+                aria-hidden="true"
+              />
+            </div>
             <About />
           </section>
           
-          <section id="portfolio" className="py-20 bg-muted/20">
+          <section id="portfolio" className="py-20 bg-muted/20 relative">
+            <div className="absolute inset-0 z-0 opacity-5">
+              <img 
+                src="https://images.unsplash.com/photo-1545239351-ef35f43d514b?auto=format&fit=crop&q=80" 
+                alt="" 
+                className="w-full h-full object-cover"
+                aria-hidden="true"
+              />
+            </div>
             <Portfolio />
           </section>
           
-          <section id="services" className="py-20 bg-background/95">
+          <section id="services" className="py-20 bg-background/95 relative">
+            <div className="absolute inset-0 z-0 opacity-5">
+              <img 
+                src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&q=80" 
+                alt="" 
+                className="w-full h-full object-cover"
+                aria-hidden="true"
+              />
+            </div>
             <Services />
           </section>
           
-          <section id="contact" className="py-20 bg-muted/20">
+          <section id="contact" className="py-20 bg-muted/20 relative">
+            <div className="absolute inset-0 z-0 opacity-5">
+              <img 
+                src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?auto=format&fit=crop&q=80" 
+                alt="" 
+                className="w-full h-full object-cover"
+                aria-hidden="true"
+              />
+            </div>
             <Contact />
           </section>
         </main>

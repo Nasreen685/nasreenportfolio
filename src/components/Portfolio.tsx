@@ -40,7 +40,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 relative z-10">
       <motion.div 
         className="text-center mb-12"
         initial={{ opacity: 0, y: 30 }}
@@ -64,7 +64,7 @@ const Portfolio = () => {
       >
         {projects.map(project => (
           <motion.div key={project.id} variants={item}>
-            <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg border-muted h-full">
+            <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg border-muted h-full backdrop-blur-sm bg-zinc-900/40">
               <div className="aspect-video overflow-hidden">
                 <img
                   src={project.image}

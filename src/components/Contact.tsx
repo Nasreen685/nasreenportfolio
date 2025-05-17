@@ -74,7 +74,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 relative z-10">
       <motion.div 
         className="text-center mb-12"
         initial={{ opacity: 0, y: 30 }}
@@ -97,7 +97,7 @@ const Contact = () => {
           whileInView="animate"
           viewport={{ once: true }}
         >
-          <Card>
+          <Card className="backdrop-blur-sm bg-zinc-900/40 border-muted/30">
             <CardContent className="pt-6">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -111,6 +111,7 @@ const Contact = () => {
                       placeholder="John Doe"
                       required
                       aria-required="true"
+                      className="bg-background/50"
                     />
                   </div>
                   <div className="space-y-2">
@@ -124,6 +125,7 @@ const Contact = () => {
                       placeholder="johndoe@example.com"
                       required
                       aria-required="true"
+                      className="bg-background/50"
                     />
                   </div>
                 </div>
@@ -138,6 +140,7 @@ const Contact = () => {
                     placeholder="How can I help you?"
                     required
                     aria-required="true"
+                    className="bg-background/50"
                   />
                 </div>
                 
@@ -150,7 +153,7 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Your message here..."
                     rows={5}
-                    className="flex h-auto w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 resize-none"
+                    className="flex h-auto w-full rounded-md border border-input bg-background/50 px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 resize-none"
                     required
                     aria-required="true"
                   />
@@ -183,7 +186,7 @@ const Contact = () => {
               href={contact.link}
               target={contact.title === "LinkedIn" ? "_blank" : undefined}
               rel={contact.title === "LinkedIn" ? "noopener noreferrer" : undefined}
-              className="flex items-start p-4 rounded-lg border border-muted hover:border-purple-500/30 transition-colors duration-300 group"
+              className="flex items-start p-4 rounded-lg border border-muted hover:border-purple-500/30 transition-colors duration-300 group backdrop-blur-sm bg-zinc-900/40"
               aria-label={contact.ariaLabel}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

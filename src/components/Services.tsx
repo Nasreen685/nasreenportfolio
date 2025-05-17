@@ -47,7 +47,7 @@ const Services = () => {
   };
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 relative z-10">
       <motion.div 
         className="text-center mb-12"
         initial={{ opacity: 0, y: 30 }}
@@ -72,7 +72,7 @@ const Services = () => {
         {services.map(service => (
           <motion.div key={service.id} variants={item}>
             <Card 
-              className="border border-muted hover:border-purple-500/30 transition-colors duration-300 h-full"
+              className="border border-muted hover:border-purple-500/30 transition-colors duration-300 h-full backdrop-blur-sm bg-zinc-900/40"
             >
               <CardHeader className="pb-2">
                 <div className="text-4xl mb-4">{service.icon}</div>

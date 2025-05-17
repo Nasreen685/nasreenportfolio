@@ -2,6 +2,7 @@
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion"; 
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 interface HeroProps {
   onExplore: () => void;
@@ -53,7 +54,7 @@ const Hero = ({ onExplore }: HeroProps) => {
       >
         <div className="w-48 h-48 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-purple-500 shadow-xl">
           <img 
-            src="/placeholder.svg" 
+            src="/lovable-uploads/dcd46ca0-a992-460c-b8bd-3d9c90fa0ce4.png" 
             alt="Shaik Nasreen" 
             className="w-full h-full object-cover"
           />

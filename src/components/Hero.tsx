@@ -31,7 +31,7 @@ const Hero = ({
           creating user-friendly and visually appealing digital experiences.
         </p>
         <div className="flex flex-wrap gap-4">
-          <Button onClick={onExplore} className="bg-purple-600 hover:bg-purple-700 transition-colors">
+          <Button onClick={onExplore} className="transition-colors bg-rose-400 hover:bg-rose-300">
             Explore My Work <ArrowDown className="ml-2" size={18} />
           </Button>
           <Button variant="outline" onClick={() => document.getElementById("contact")?.scrollIntoView({

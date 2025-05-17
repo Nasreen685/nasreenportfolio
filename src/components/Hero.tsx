@@ -23,7 +23,7 @@ const Hero = ({
           <span className="block">Hi, I'm</span>
           <span className="block text-purple-500">Shaik Nasreen</span>
         </h1>
-        <h2 className="text-xl md:text-2xl mb-6 text-muted-foreground">
+        <h2 className="text-xl md:text-2xl mb-6 text-teal-200">
           Web Designer | Aspiring Software Engineer
         </h2>
         <p className="mb-8 max-w-lg text-green-200">

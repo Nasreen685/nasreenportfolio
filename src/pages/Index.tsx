@@ -29,16 +29,16 @@ const Index = () => {
   };
 
   return (
-    <div className="bg-background text-foreground min-h-screen">
+    <div className="bg-background text-foreground">
       <Navbar scrolled={scrolled} onNavigate={scrollToSection} />
       
       <AnimatePresence>
         <main>
-          <section id="home" className="min-h-screen flex items-center">
+          <section id="home" className="min-h-screen">
             <Hero onExplore={() => scrollToSection('about')} />
           </section>
           
-          <section id="about" className="py-20">
+          <section id="about" className="py-20 bg-background/95">
             <About />
           </section>
           
@@ -46,7 +46,7 @@ const Index = () => {
             <Portfolio />
           </section>
           
-          <section id="services" className="py-20">
+          <section id="services" className="py-20 bg-background/95">
             <Services />
           </section>
           

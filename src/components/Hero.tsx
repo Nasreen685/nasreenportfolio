@@ -36,7 +36,7 @@ const Hero = ({
           </Button>
           <Button variant="outline" onClick={() => document.getElementById("contact")?.scrollIntoView({
           behavior: "smooth"
-        })}>
+        })} className="bg-rose-400 hover:bg-rose-300">
             Get In Touch
           </Button>
         </div>

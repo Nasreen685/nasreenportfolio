@@ -18,7 +18,7 @@ const Portfolio = () => {
       id: 2,
       title: "MY POLICY MATE",
       description: "An insurance management website that helps users track, compare, and manage different insurance policies all in one place.",
-      image: "/placeholder.svg",
+      image: "/lovable-uploads/c5488792-3a96-4beb-814e-cb10194df0d7.png",
       status: "In Progress",
       link: "#"
     }

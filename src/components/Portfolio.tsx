@@ -10,7 +10,7 @@ const Portfolio = () => {
       id: 1,
       title: "Bank Management System",
       description: "A comprehensive web-based solution for banking operations with user authentication, account management, and transaction tracking features.",
-      image: "/placeholder.svg",
+      image: "/lovable-uploads/488242f1-2778-4eed-adc8-71b780797826.png",
       status: "Completed",
       link: "#"
     },

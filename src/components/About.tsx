@@ -127,7 +127,7 @@ const About = () => {
               <div className="border-l-2 border-purple-500 pl-5 space-y-5">
                 <div>
                   <h4 className="text-xl font-medium">B.Tech in Computer Science & Engineering</h4>
-                  <p className="text-purple-500">2021 - Present</p>
+                  <p className="text-purple-500">2022 - Present</p>
                   <p className="text-muted-foreground">Bhoj Reddy Engineering College for Women, Hyderabad</p>
                   <p className="font-medium">CGPA: 8.18</p>
                 </div>
